@@ -19,7 +19,7 @@ const Contact = () => {
 
   const handleSubmit=(e)=>{}
   return (
-    <div className='xl:mt-12 xl:flex-row flex-col-reverse '>
+    <div className='xl:mt-12 xl:flex-row flex flex-col-reverse '>
      <motion.div 
      variants={slideIn('left','tween',0.2,1)}
      className='flex-[0.75]  bg-black-100 p-8 rounded-2xl'>
@@ -33,7 +33,7 @@ const Contact = () => {
          <label className="flex flex-col" htmlFor="">
           <span className='text-white font-medium mb-4'>Your Name</span>
           <input type="text" name="name" value={form.name}
-          Onchange={handleChange}
+          onChange={handleChange}
           placeholder="What's your name?"
           className='bg-tertiary py-4 px-6 placeholder:text-secondary text-white rounded-lg outlined-none border-none font-medium' />
         </label>
@@ -41,7 +41,7 @@ const Contact = () => {
         <label className="flex flex-col" htmlFor="">
           <span className='text-white font-medium mb-4'>Your Name</span>
           <input type="email" name="email" value={form.email}
-          Onchange={handleChange}
+          onChange={handleChange}
           placeholder="What's your email?"
           className='bg-tertiary py-4 px-6 placeholder:text-secondary text-white rounded-lg outlined-none border-none font-medium' />
         </label>
@@ -49,14 +49,19 @@ const Contact = () => {
           <span className='text-white font-medium mb-4'>Your Name</span>
           <textarea
            rows="7" name="message" value={form.message}
-          Onchange={handleChange}
+          onChange={handleChange}
           placeholder="What do you want to say"
           className='bg-tertiary py-4 px-6 placeholder:text-secondary text-white rounded-lg outlined-none border-none font-medium' />
         </label>
-       
+       <button type='submit' className='bg-tertiary py-3 px-8 outline-none w-fit text-white font-bold shadow-md '>{loading? 'Sending...':'Send'}</button>
       </form>
 
      </motion.div>
+     <motion.div 
+      variants={slideIn('right','tween',0.2,1)}className='xl:flex-1 x1:h-auto md:h-[550px] h-[350px]'>
+        <EarthCanvas/>
+      </motion.div>
+
     </div>
   )
 }
