@@ -30,14 +30,26 @@ import tesla from "./company/tesla.png";
 import carrent from "./carrent.png";
 import jobit from "./jobit.png";
 import tripguide from "./tripguide.png";
+import localmarket from "./local-market.png";
+import sanrakshak from "./sanrakshak.png";
+import twitter  from "./twitter.png";
+import notesapp  from "./notesapp.png";
+import aws from "./tech/aws.png"
+import resume from "./Abhishek_Resume.pdf"
 
 export {
   logo,
+  aws,
+  resume,
   backend,
   creator,
   mobile,
   web,
   github,
+  localmarket,
+  notesapp,
+  sanrakshak,
+  twitter,
   menu,
   close,
   css,

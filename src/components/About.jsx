@@ -36,7 +36,7 @@ const About = () => {
     </motion.div>
     <motion.p variants={fadeIn("","",0.1,1)}>
       I am a BTech Student in NIT Kurukshetra. 
-      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aspernatur suscipit repellat, necessitatibus ex, reprehenderit dignissimos ipsam ipsum nihil ad cumque assumenda architecto rerum, est odio odit nulla provident! Maiores amet et fuga itaque harum? Accusamus similique eaque, mollitia soluta inventore ipsum et fuga officiis fugit.
+     I am a passionate web developer and app developer with keen interest in competitive programming.
     </motion.p>
     <div className="mt-20 flex flex-wrap gap-10">
       {services.map((service,index)=>(

@@ -3,7 +3,7 @@ import {Link} from 'react-router-dom';
 
 import {styles} from '../styles';
 import {navLinks} from '../constants'
-import {logo,menu,close} from '../assets'
+import {logo,menu,close, resume} from '../assets'
 
 const Navbar = () => {
   const [active,setActive]=useState('')
@@ -35,7 +35,15 @@ const Navbar = () => {
           } onClick={()=> setActive(Link.title)}
           ><a href={`#${Link.id}`}>{Link.title}</a></li>
         )
-)}
+)}  
+ <li
+         
+         className={
+           ` font-poppins text-white font-medium cursor-pointer text-[16px]`
+         } onClick={()=> {
+          
+         }}
+         ><a href={resume}>Resume</a></li>
       </ul>
       <div className='sm:hidden flex flex-1 justify-end items-center'>
         <img src={toggle? close:menu} alt="menu" className='w-[28px] h-[28px] object-contain cursor-pointer' onClick={()=>setToggle(!toggle)} />
@@ -56,8 +64,8 @@ const Navbar = () => {
             setActive(Link.title)
           }}
           ><a href={`#${Link.id}`}>{Link.title}</a></li>
-        )
-)}
+        )       
+)}  
       </ul>
         </div>
 

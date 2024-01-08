@@ -23,6 +23,11 @@ import {
     jobit,
     tripguide,
     threejs,
+    aws,
+    localmarket,
+    twitter,
+    notesapp,
+    sanrakshak
   } from "../assets";
   
   export const navLinks = [
@@ -46,7 +51,7 @@ import {
       icon: web,
     },
     {
-      title: "React Native Developer",
+      title: "Flutter App Developer",
       icon: mobile,
     },
     {
@@ -54,7 +59,7 @@ import {
       icon: backend,
     },
     {
-      title: "Content Creator",
+      title: "Competitive Programmer",
       icon: creator,
     },
   ];
@@ -103,6 +108,14 @@ import {
     {
       name: "git",
       icon: git,
+    },
+    {
+      name: "docker",
+      icon: docker,
+    },
+    {
+      name: "aws",
+      icon: aws,
     },
     
     
@@ -192,12 +205,12 @@ import {
   
   const projects = [
     {
-      name: "Car Rent",
+      name: "Local Market",
       description:
-        "Web-based platform that allows users to search, book, and manage car rentals from various providers, providing a convenient and efficient solution for transportation needs.",
+        "A website to support local vendors which provide goods and services to users from their local market.",
       tags: [
         {
-          name: "react",
+          name: "js",
           color: "blue-text-gradient",
         },
         {
@@ -205,38 +218,46 @@ import {
           color: "green-text-gradient",
         },
         {
-          name: "tailwind",
+          name: "css",
           color: "pink-text-gradient",
         },
+        {
+          name: "html",
+          color: "red-text-gradient",
+        },
       ],
-      image: carrent,
-      source_code_link: "https://github.com/",
+      image: localmarket,
+      source_code_link: "https://github.com/abhishek-3078/local-market",
     },
     {
-      name: "Job IT",
+      name: "Sanrakshak",
       description:
-        "Web application that enables users to search for job openings, view estimated salary ranges for positions, and locate available jobs based on their current location.",
+        "Disaster management App built in Smart India Hackathon 2023 which help",
       tags: [
         {
-          name: "react",
+          name: "js",
           color: "blue-text-gradient",
         },
         {
-          name: "restapi",
+          name: "mongodb",
           color: "green-text-gradient",
         },
         {
-          name: "scss",
+          name: "css",
           color: "pink-text-gradient",
         },
+        {
+          name: "html",
+          color: "red-text-gradient",
+        },
       ],
-      image: jobit,
-      source_code_link: "https://github.com/",
+      image: sanrakshak,
+      source_code_link: "https://github.com/abhishek-3078/sanrakshak",
     },
     {
-      name: "Trip Guide",
+      name: "Twitter clone",
       description:
-        "A comprehensive travel booking platform that allows users to book flights, hotels, and rental cars, and offers curated recommendations for popular destinations.",
+        "A clone of twitter (now X) for learning purpose",
       tags: [
         {
           name: "nextjs",
@@ -247,12 +268,33 @@ import {
           color: "green-text-gradient",
         },
         {
-          name: "css",
+          name: "typescript",
           color: "pink-text-gradient",
         },
       ],
-      image: tripguide,
-      source_code_link: "https://github.com/",
+      image: twitter,
+      source_code_link: "https://github.com/abhishek-3078/twitter-clone",
+    },
+    {
+      name: "Notes App",
+      description:
+        "A notes app for mobile (ios and android) for users to create and store notes in cloud.",
+      tags: [
+        {
+          name: "flutter",
+          color: "blue-text-gradient",
+        },
+        {
+          name: "firebase",
+          color: "green-text-gradient",
+        },
+        {
+          name: "tailwindcss",
+          color: "pink-text-gradient",
+        },
+      ],
+      image: notesapp,
+      source_code_link: "https://github.com/abhishek-3078/mynotes",
     },
   ];
   
