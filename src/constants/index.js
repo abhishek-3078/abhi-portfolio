@@ -235,7 +235,7 @@ import {
         "Disaster management App built in Smart India Hackathon 2023 which help",
       tags: [
         {
-          name: "js",
+          name: "reactjs",
           color: "blue-text-gradient",
         },
         {
@@ -243,13 +243,10 @@ import {
           color: "green-text-gradient",
         },
         {
-          name: "css",
+          name: "tailwind",
           color: "pink-text-gradient",
-        },
-        {
-          name: "html",
-          color: "red-text-gradient",
-        },
+        }
+        
       ],
       image: sanrakshak,
       source_code_link: "https://github.com/abhishek-3078/sanrakshak",
