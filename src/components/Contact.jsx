@@ -6,6 +6,7 @@ import {styles} from '../styles'
 import { EarthCanvas } from './canvas';
 import { SectionWrapper } from '../hoc';
 import { slideIn } from '../utils/motion';
+import Popup from './utils/Popup';
 
 const Contact = () => {
   const formRef=useRef();
@@ -16,7 +17,7 @@ const Contact = () => {
   });
   const [loading,setLoading]=useState(false);
   const handleChange=(e)=>{}
-
+  const [showDialog,setShowDialog]=useState(false);
   const handleSubmit=(e)=>{}
   return (
     <div className='xl:mt-12 xl:flex-row flex flex-col-reverse '>
@@ -53,7 +54,8 @@ const Contact = () => {
           placeholder="What do you want to say"
           className='bg-tertiary py-4 px-6 placeholder:text-secondary text-white rounded-lg outlined-none border-none font-medium' />
         </label>
-       <button type='submit' className='bg-tertiary py-3 px-8 outline-none w-fit text-white font-bold shadow-md '>{loading? 'Sending...':'Send'}</button>
+       <button type='button' onClick={()=>setShowDialog(v=>!v)} className='bg-tertiary py-3 px-8 outline-none w-fit text-white font-bold shadow-md '>{loading? 'Sending...':'Send'}</button>
+      {showDialog ? <Popup onClose={()=>setShowDialog(false)}/>:<></>}
       </form>
 
      </motion.div>

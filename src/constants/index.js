@@ -27,7 +27,9 @@ import {
     localmarket,
     twitter,
     notesapp,
-    sanrakshak
+    sanrakshak,
+    flutter,
+    emart
   } from "../assets";
   
   export const navLinks = [
@@ -84,6 +86,10 @@ import {
     {
       name: "React JS",
       icon: reactjs,
+    },
+    {
+      name: "Flutter",
+      icon: flutter,
     },
     {
       name: "Redux Toolkit",
@@ -250,6 +256,50 @@ import {
       ],
       image: sanrakshak,
       source_code_link: "https://github.com/abhishek-3078/sanrakshak",
+    },
+    {
+      name: "Emart ",
+      description:
+        "An Ecommerce mobile application built using flutter and firebase. ",
+      tags: [
+        {
+          name: "flutter",
+          color: "blue-text-gradient",
+        },
+        {
+          name: "firebase",
+          color: "green-text-gradient",
+        },
+        {
+          name: "getX",
+          color: "pink-text-gradient",
+        }
+        
+      ],
+      image: emart,
+      source_code_link: "https://github.com/abhishek-3078/",
+    },
+    {
+      name: "Chat App",
+      description:
+        "A web platform where users can create a room to interact with other users and share text,images,videos,etc among each other",
+      tags: [
+        {
+          name: "nodejs",
+          color: "blue-text-gradient",
+        },
+        {
+          name: "expressjs",
+          color: "green-text-gradient",
+        },
+        {
+          name: "hbs",
+          color: "pink-text-gradient",
+        }
+        
+      ],
+      image: sanrakshak,
+      source_code_link: "https://github.com/abhishek-3078/chat-app",
     },
     {
       name: "Twitter clone",

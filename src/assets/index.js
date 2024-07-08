@@ -21,6 +21,7 @@ import redux from "./tech/redux.png";
 import tailwind from "./tech/tailwind.png";
 import typescript from "./tech/typescript.png";
 import threejs from "./tech/threejs.svg";
+import flutter from "./tech/flutter.png";
 
 import meta from "./company/meta.png";
 import shopify from "./company/shopify.png";
@@ -36,6 +37,7 @@ import twitter  from "./twitter.png";
 import notesapp  from "./notesapp.png";
 import aws from "./tech/aws.png"
 import resume from "./Abhishek_Resume.pdf"
+import emart from "./emart.jpg"
 
 export {
   logo,
@@ -72,4 +74,6 @@ export {
   carrent,
   jobit,
   tripguide,
+  emart,
+  flutter,
 };
