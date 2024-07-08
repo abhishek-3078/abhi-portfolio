@@ -5,7 +5,8 @@ import CanvasLoader from '../Loader'
 
 const Computers = (isMobile) => {
   
-    const computer=useGLTF('/desktop_pc/scene.gltf')
+    const {scene}=useGLTF('/desktop_pc/scene.gltf')
+    // console.log(computer)
     return (
       <mesh>
         <hemisphereLight intensity={0.15} groundColor='black'/>
@@ -19,10 +20,12 @@ const Computers = (isMobile) => {
         shadow-mapSize={1024}
         />
         <primitive
-          object={computer.scene}
+          object={scene}
           scale={isMobile?0.6:0.75}
-          position={isMobile? [-3,-3,-2.2]:[0,-3.25,-1.5]}/>
+          position={isMobile? [-3,-3,-2.2]:[0,-3.25,-1.5]}
           rotation={[-0.01,-0.2,-0.1]}
+          
+          />
       </mesh>
     )
   
@@ -46,7 +49,7 @@ const ComputersCanvas=()=>{
   },[])
   return (
     <Canvas frameloop='demand'
-    shadows
+    shadows={true}
     camera={{position:[20,3,5],fov:25}}
     gl={{preserveDrawingBuffer:true}}>
       {/* using Suspense with a fallback component allows you to handle the loading of 3D models or other assets asynchronously.  */}
